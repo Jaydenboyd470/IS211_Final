@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Dashboard</h2>
+<a href="/add_post">Add New Post</a>
+{% for post in posts %}
+    <div class="post-card">
+        <h2>{{ post['title'] }}</h2>
+        <p>By {{ post['author'] }} | Published: {{ post['date_published'] }}</p>
+        
+        <!-- Edit as a button -->
+        <a href="/edit_post/{{ post.id }}" class="button edit-button">Edit</a>
+
+        <!-- Delete as a button -->
+        <form action="/delete_post/{{ post.id }}" method="POST">
+            <!-- Hidden field to override the POST method to DELETE -->
+            <input type="hidden" name="_method" value="DELETE">
+            <button type="submit" class="button delete-button">Delete</button>
+        </form>
+        
+    </div>
+{% endfor %}
+
+{% endblock %}

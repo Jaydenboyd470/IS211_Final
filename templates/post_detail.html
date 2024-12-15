@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ post['title'] }}</h1>
+<p>Published on: {{ post['date_published'] }}</p>
+<p>By: {{ post['author'] }}</p>
+<div>
+    <h3>Content:</h3>
+    <p>{{ post['content'] }}</p>
+</div>
+<a href="{{ url_for('index') }}">Back to home</a>
+{% endblock %}

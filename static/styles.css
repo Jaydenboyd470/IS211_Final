@@ -1,0 +1,208 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+/* Navbar */
+nav {
+    background-color: #444;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Post Listing */
+ul.posts {
+    list-style: none;
+}
+
+ul.posts li {
+    background-color: #fff;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul.posts li a {
+    color: #333;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ul.posts li a:hover {
+    text-decoration: underline;
+}
+
+ul.posts li p {
+    font-size: 1em;
+    color: #777;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+/* Button Styling for both Edit and Delete */
+.button {
+    padding: 5px 10px;  /* Reduce the padding for a smaller button */
+    border-radius: 5px;
+    text-decoration: none;  /* Make sure the link is not underlined */
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;  /* Smaller font size */
+}
+
+/* Edit Button - Same as Delete Button */
+.edit-button {
+    background-color: #1E90FF;  /* Red color for the Edit button */
+    color: white;
+    border: 1px solid #1E90FF;
+}
+
+.edit-button:hover {
+    background-color: #4169E1;  /* Darker red on hover */
+}
+
+/* Delete Button */
+.delete-button {
+    background-color: #dc3545;  /* Red color for the Delete button */
+    color: white;
+    border: 1px solid #dc3545;
+}
+
+.delete-button:hover {
+    background-color: #8B0000;  /* Darker red on hover */
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Form Styling */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+form textarea {
+    height: 200px;
+}
+
+form button {
+    width: 100%;
+}
+
+/* Single Post Page */
+.post-detail {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.post-detail h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.post-detail p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    .post-detail h1 {
+        font-size: 1.8em;
+    }
+}
